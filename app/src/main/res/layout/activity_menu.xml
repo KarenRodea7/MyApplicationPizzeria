@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Menu">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#DAFA9440"
+        android:gravity="center"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#C6000000"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:text="Bienvenido al menú"
+            android:layout_marginBottom="10dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/User"
+            android:layout_marginBottom="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#C6000000"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:text="Elige una opción"/>
+        <ImageView
+            android:layout_width="200sp"
+            android:layout_height="110sp"
+            android:layout_marginBottom="5dp"
+            android:src="@drawable/pizzas"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Menú de pizzas"
+            android:textColor="#ffffff"
+            android:textSize="22dp"
+            android:layout_marginBottom="5dp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Figuras"
+            android:backgroundTint="#381995"
+            android:text="Iniciar"/>
+        <ImageView
+            android:layout_width="200sp"
+            android:layout_height="110sp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="5dp"
+            android:src="@drawable/bebidas"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="Menú de bebidas"
+            android:textColor="#ffffff"
+            android:textSize="22dp"
+            android:layout_marginBottom="5dp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Quiz"
+            android:backgroundTint="#381995"
+            android:text="Iniciar" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Regresar"
+                android:text="Regresar"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="10dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

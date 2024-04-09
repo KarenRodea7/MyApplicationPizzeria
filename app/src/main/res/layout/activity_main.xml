@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/pizzer_a">
+    </ImageView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¡Bienvenido!"
+            android:layout_marginTop="120dp"
+            android:textColor="#621A8E"
+            android:textSize="30sp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="70dp"
+                android:paddingLeft="10dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="20dp"
+                android:textSize="25dp"
+                android:text="User: "
+                android:textColor="#DF0A0A" />
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/User"
+                android:hint="Escribe tu usuario"
+                android:textStyle="normal"
+                android:textColor="#000000"
+                android:textColorHint="#000000"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="20dp"
+                android:textSize="25dp"
+                android:text="Pass: "
+                android:textColor="#DF0A0A" />
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/Pass"
+                android:hint="Escribe tu contraseña"
+                android:textStyle="normal"
+                android:inputType="textPassword"
+                android:textColor="#000000"
+                android:textColorHint="#000000"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="220dp"
+            android:layout_marginBottom="100dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#6A0EA1"
+                android:id="@+id/Iniciar"
+                android:textSize="20dp"
+                android:text="Iniciar sesión"/>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>
