@@ -2,7 +2,9 @@ package com.example.myapplicationpizzas;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -13,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
 
     Button btnIniciar;
     EditText user, pass;
+    SharedPreferences preferences;
 
     int sum = 0;
 
@@ -32,11 +35,11 @@ public class MainActivity extends AppCompatActivity {
 
                     Intent intent = new Intent(getApplicationContext(), Menu.class);
                     String datos = user.getText().toString();
+                    guardarMensaje(datos);
                     String contr = pass.getText().toString();
 
                     if(datos.equals("Pizzario1") & contr.equals("PizzaPass")){
                         startActivity(intent);
-                        Toast.makeText(getApplicationContext(), "Bienvenido al Menú "+datos, Toast.LENGTH_LONG).show();
                     }else {
                         Toast.makeText(getApplicationContext(),"Cuenta o contraseña incorrectos, te quedan:  " +(3-sum)+" intentos",Toast.LENGTH_SHORT).show();
                     }
@@ -46,5 +49,12 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+    }
+
+    private void guardarMensaje(String datos) {
+        preferences=getSharedPreferences("Credenciales", Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = preferences.edit();
+        editor.putString("user",datos);
+        editor.commit();
     }
 }
