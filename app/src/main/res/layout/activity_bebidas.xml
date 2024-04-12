@@ -72,12 +72,13 @@
                 android:adjustViewBounds="true"
                 android:background="#ffffff"
                 android:src="@drawable/resta"/>
+
             <EditText
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:id="@+id/CC"
+                android:layout_width="14dp"
+                android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"/>
+                android:layout_marginRight="10dp" />
             <ImageButton
                 android:layout_width="20dp"
                 android:layout_height="20dp"

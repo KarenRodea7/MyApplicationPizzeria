@@ -45,6 +45,7 @@ public class Bebidas extends AppCompatActivity {
         pagar = (Button)findViewById(R.id.PagarB);
 
         leerOpc();
+        Total();
 
         men1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -121,6 +122,12 @@ public class Bebidas extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), Menu.class);
+
+                guardarOpc1(sum1);
+                guardarOpc2(sum2);
+                guardarOpc3(sum3);
+                Total();
+                guardarTot(totalb);
                 startActivity(intent);
             }
         });
@@ -129,6 +136,11 @@ public class Bebidas extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), Pago.class);
+                guardarOpc1(sum1);
+                guardarOpc2(sum2);
+                guardarOpc3(sum3);
+                Total();
+                guardarTot(totalb);
                 startActivity(intent);
             }
         });
@@ -136,9 +148,40 @@ public class Bebidas extends AppCompatActivity {
 
     }
 
+    private void guardarTot(int totalb) {
+        preferences=getSharedPreferences("Credenciales", Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = preferences.edit();
+        editor.putString("totb", String.valueOf(totalb));
+        editor.commit();
+    }
+
     private void Total() {
+        guardarc1b(c1);
+        guardarc2b(c2);
+        guardarc3b(c3);
         totalb=c1 +c2 + c3;
         tot.setText("Total: $ "+totalb);
+    }
+
+    private void guardarc3b(int c3) {
+        preferences=getSharedPreferences("Credenciales", Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = preferences.edit();
+        editor.putString("c3b", String.valueOf(c3));
+        editor.commit();
+    }
+
+    private void guardarc2b(int c2) {
+        preferences=getSharedPreferences("Credenciales", Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = preferences.edit();
+        editor.putString("c2b", String.valueOf(c2));
+        editor.commit();
+    }
+
+    private void guardarc1b(int c1) {
+        preferences=getSharedPreferences("Credenciales", Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = preferences.edit();
+        editor.putString("c1b", String.valueOf(c1));
+        editor.commit();
     }
 
     private void guardarOpc3(int sum3) {
@@ -170,6 +213,12 @@ public class Bebidas extends AppCompatActivity {
         opcB2.setText(String.valueOf(sum2));
         sum3 = Integer.parseInt(preferences.getString("opcB3", "0"));
         opcB3.setText(String.valueOf(sum3));
+        c1 = Integer.parseInt(preferences.getString("c1b", "0"));
+
+        c2 = Integer.parseInt(preferences.getString("c2b", "0"));
+
+        c3 = Integer.parseInt(preferences.getString("c3b", "0"));
+
     }
 
 }

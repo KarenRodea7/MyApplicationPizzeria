@@ -124,6 +124,11 @@ public class Pizzas<sum1> extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), Menu.class);
+                guardarOpc1(sum1);
+                guardarOpc2(sum2);
+                guardarOpc3(sum3);
+                Total();
+                guardarTotp(totalp);
                 startActivity(intent);
             }
         });
@@ -132,14 +137,50 @@ public class Pizzas<sum1> extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), Pago.class);
+                guardarOpc1(sum1);
+                guardarOpc2(sum2);
+                guardarOpc3(sum3);
+                Total();
+                guardarTotp(totalp);
                 startActivity(intent);
             }
         });
     }
 
+    private void guardarTotp(int totalp) {
+        preferences=getSharedPreferences("Credenciales", Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = preferences.edit();
+        editor.putString("totp", String.valueOf(totalp));
+        editor.commit();
+    }
+
     private void Total() {
+        guardarc1(c1);
+        guardarc2(c2);
+        guardarc3(c3);
         totalp=c1 +c2 + c3;
         tot.setText("Total: $ "+totalp);
+    }
+
+    private void guardarc3(int c3) {
+        preferences=getSharedPreferences("Credenciales", Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = preferences.edit();
+        editor.putString("c3p", String.valueOf(c3));
+        editor.commit();
+    }
+
+    private void guardarc2(int c2) {
+        preferences=getSharedPreferences("Credenciales", Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = preferences.edit();
+        editor.putString("c2p", String.valueOf(c2));
+        editor.commit();
+    }
+
+    private void guardarc1(int c1) {
+        preferences=getSharedPreferences("Credenciales", Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = preferences.edit();
+        editor.putString("c1p", String.valueOf(c1));
+        editor.commit();
     }
 
     private void guardarOpc3(int sum3) {
