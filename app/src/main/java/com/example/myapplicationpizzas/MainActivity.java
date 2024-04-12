@@ -27,6 +27,8 @@ public class MainActivity extends AppCompatActivity {
         btnIniciar = (Button) findViewById(R.id.Iniciar);
         user = (EditText)findViewById(R.id.User);
         pass = (EditText)findViewById(R.id.Pass);
+
+        eliminarPref();
         btnIniciar.setOnClickListener(new View.OnClickListener() {
 
             public void onClick(View view) {
@@ -38,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
                     guardarMensaje(datos);
                     String contr = pass.getText().toString();
 
-                    if(datos.equals("Pizzario1") & contr.equals("PizzaPass")){
+                    if(datos.equals("1") & contr.equals("1")){
                         startActivity(intent);
                     }else {
                         Toast.makeText(getApplicationContext(),"Cuenta o contraseña incorrectos, te quedan:  " +(3-sum)+" intentos",Toast.LENGTH_SHORT).show();
@@ -50,6 +52,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+
+    private void eliminarPref() {
+        preferences = getSharedPreferences("Credenciales", Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = preferences.edit();
+        editor.clear().commit();
+    }
+
 
     private void guardarMensaje(String datos) {
         preferences=getSharedPreferences("Credenciales", Context.MODE_PRIVATE);

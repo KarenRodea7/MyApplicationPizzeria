@@ -9,13 +9,13 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#DAFA9440"
+        android:background="@drawable/fondo2"
         android:gravity="center"
         android:orientation="vertical">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="#C6000000"
+            android:textColor="#C6D61414"
             android:textSize="25sp"
             android:textStyle="bold"
             android:text="Bienvenido al menú principal"
@@ -43,7 +43,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Menú de pizzas"
-            android:textColor="#ffffff"
+            android:textColor="#000"
             android:textSize="22dp"
             android:layout_marginBottom="5dp"/>
         <Button
@@ -63,7 +63,7 @@
             android:layout_height="wrap_content"
             android:textAlignment="center"
             android:text="Menú de refrescos"
-            android:textColor="#ffffff"
+            android:textColor="#000"
             android:textSize="22dp"
             android:layout_marginBottom="5dp"/>
         <Button

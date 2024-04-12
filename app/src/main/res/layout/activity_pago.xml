@@ -15,33 +15,250 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="20dp"
             android:text="Pago"
             android:textAlignment="center"
             android:textColor="#C62828"
             android:textStyle="bold"
             android:textSize="30sp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/User"
+            android:layout_marginBottom="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#C6000000"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:text="Tu pedido es el siguiente:"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pizzas"
+            android:layout_marginRight="80dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="20dp">
+        </TextView>
+
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="20dp"
-            android:orientation="vertical"
-            android:gravity="center_horizontal">
-            <TextView
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="20dp">
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="#C6000000"
-                android:textSize="25sp"
-                android:textStyle="bold"
-                android:text="Tu pedido es el siguiente"
-                android:layout_marginBottom="10dp"/>
-            <EditText
+                android:orientation="vertical"
+                android:layout_marginRight="40dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/C1"
+                    android:textSize="20dp"
+                    android:text="1"
+                    android:layout_marginBottom="10dp"/>
+                <TextView
+                    android:id="@+id/C2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2"
+                    android:textSize="20dp"
+                    android:layout_marginBottom="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/C3"
+                    android:textSize="20dp"
+                    android:text="3" />
+            </LinearLayout>
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/User"
-                android:layout_marginBottom="10dp"/>
+                android:orientation="vertical"
+                android:gravity="center_vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/H"
+                    android:textSize="20dp"
+                    android:text="Hawaiana"
+                    android:layout_marginBottom="10dp"/>
+                <TextView
+                    android:id="@+id/P"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pepperoni"
+                    android:textSize="20dp"
+                    android:layout_marginBottom="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/V"
+                    android:textSize="20dp"
+                    android:text="Vegetariana" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="30dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/PH"
+                    android:textSize="20dp"
+                    android:text=" p "
+                    android:layout_marginBottom="10dp"/>
+                <TextView
+                    android:id="@+id/PP"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" p "
+                    android:textSize="20dp"
+                    android:layout_marginBottom="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/PV"
+                    android:textSize="20dp"
+                    android:text=" p " />
+            </LinearLayout>
+            </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Refrescos"
+            android:layout_marginRight="65dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="20dp">
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="20dp">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginRight="40dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/C4"
+                    android:textSize="20dp"
+                    android:text="1"
+                    android:layout_marginBottom="10dp"/>
+                <TextView
+                    android:id="@+id/C5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2"
+                    android:textSize="20dp"
+                    android:layout_marginBottom="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/C6"
+                    android:textSize="20dp"
+                    android:text="3" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/C"
+                    android:textSize="20dp"
+                    android:text="Coca cola"
+                    android:layout_marginBottom="10dp"/>
+                <TextView
+                    android:id="@+id/F"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fanta"
+                    android:textSize="20dp"
+                    android:layout_marginBottom="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/S"
+                    android:textSize="20dp"
+                    android:text="Sprite" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50"
+                android:orientation="vertical"
+                android:gravity="center_vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/PC"
+                    android:textSize="20dp"
+                    android:text=" p "
+                    android:layout_marginBottom="10dp"/>
+                <TextView
+                    android:id="@+id/PF"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" p "
+                    android:textSize="20dp"
+                    android:layout_marginBottom="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/PS"
+                    android:textSize="20dp"
+                    android:text=" p " />
+            </LinearLayout>
+        </LinearLayout>
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/TotalF"
+            android:text="Total: "
+            android:layout_marginLeft="50dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="20dp">
+        </TextView>
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:orientation="horizontal">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/MenuP"
+                android:backgroundTint="#27C8D6"
+                android:textColor="#000"
+                android:text="Menú"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/PagarP"
+                android:layout_marginLeft="100dp"
+                android:backgroundTint="#27C8D6"
+                android:textColor="#000"
+                android:text="Pagar"/>
 
         </LinearLayout>
+
 
 
     </LinearLayout>

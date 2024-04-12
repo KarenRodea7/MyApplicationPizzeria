@@ -57,32 +57,35 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="20dp"
-            android:text="A sólo $"/>
+            android:text="$20"/>
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="75dp"
+            android:layout_marginBottom="55dp"
             android:orientation="horizontal"
             android:gravity="center">
             <ImageButton
                 android:layout_width="20dp"
                 android:layout_height="20dp"
+                android:id="@+id/R1"
                 android:scaleType="centerInside"
                 android:adjustViewBounds="true"
                 android:background="#ffffff"
-                android:src="@drawable/menorq"/>
+                android:src="@drawable/resta"/>
             <EditText
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"/>
+                android:id="@+id/CC"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"/>
             <ImageButton
                 android:layout_width="20dp"
                 android:layout_height="20dp"
+                android:id="@+id/S1"
                 android:scaleType="centerInside"
                 android:adjustViewBounds="true"
                 android:background="#ffffff"
-                android:src="@drawable/mayorq"/>
+                android:src="@drawable/suma"/>
         </LinearLayout>
         <TextView
             android:layout_width="wrap_content"
@@ -93,7 +96,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="20dp"
-            android:text="A sólo $"/>
+            android:text="$17"/>
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -103,22 +106,25 @@
             <ImageButton
                 android:layout_width="20dp"
                 android:layout_height="20dp"
+                android:id="@+id/R2"
                 android:scaleType="centerInside"
                 android:adjustViewBounds="true"
                 android:background="#ffffff"
-                android:src="@drawable/menorq"/>
+                android:src="@drawable/resta"/>
             <EditText
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"/>
+                android:id="@+id/fanta"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"/>
             <ImageButton
                 android:layout_width="20dp"
                 android:layout_height="20dp"
+                android:id="@+id/S2"
                 android:scaleType="centerInside"
                 android:adjustViewBounds="true"
                 android:background="#ffffff"
-                android:src="@drawable/mayorq"/>
+                android:src="@drawable/suma"/>
 
         </LinearLayout>
         <TextView
@@ -130,41 +136,49 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="20dp"
-            android:text="A sólo $"/>
+            android:text="$18"/>
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="60dp"
+            android:layout_marginBottom="10dp"
             android:orientation="horizontal"
             android:gravity="center">
             <ImageButton
                 android:layout_width="20dp"
                 android:layout_height="20dp"
+                android:id="@+id/R3"
                 android:scaleType="centerInside"
                 android:adjustViewBounds="true"
                 android:background="#ffffff"
-                android:src="@drawable/menorq"/>
+                android:src="@drawable/resta"/>
             <EditText
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"/>
+                android:id="@+id/Sprite"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"/>
             <ImageButton
                 android:layout_width="20dp"
                 android:layout_height="20dp"
+                android:id="@+id/S3"
                 android:scaleType="centerInside"
                 android:adjustViewBounds="true"
                 android:background="#ffffff"
-                android:src="@drawable/mayorq"/>
-
+                android:src="@drawable/suma"/>
         </LinearLayout>
-
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/totB"
+            android:textSize="20dp">
+        </TextView>
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/PagarB"
+            android:layout_marginTop="10dp"
             android:layout_marginBottom="20dp"
-            android:layout_marginLeft="10dp"
+            android:layout_marginLeft="30dp"
             android:text="Pagar" />
     </LinearLayout>
 
