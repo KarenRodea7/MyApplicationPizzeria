@@ -63,7 +63,10 @@ public class Pago extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 //if(Total>0){
-                    Toast.makeText(getApplicationContext(), "Gracias por tu compra "+preferences.getString("user","No hay datos"), Toast.LENGTH_LONG).show();
+                Intent intent = new Intent(getApplicationContext(), Menu.class);
+
+                Toast.makeText(getApplicationContext(), "Gracias por tu compra "+preferences.getString("user","No hay datos"), Toast.LENGTH_LONG).show();
+                startActivity(intent);
                 //}
             }
         });

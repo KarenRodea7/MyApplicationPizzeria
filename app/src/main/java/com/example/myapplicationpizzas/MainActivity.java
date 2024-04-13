@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
                     guardarMensaje(datos);
                     String contr = pass.getText().toString();
 
-                    if(datos.equals("1") & contr.equals("1")){
+                    if(datos.equals("Pizza") & contr.equals("Pizzapass")){
                         startActivity(intent);
                     }else {
                         Toast.makeText(getApplicationContext(),"Cuenta o contraseña incorrectos, te quedan:  " +(3-sum)+" intentos",Toast.LENGTH_SHORT).show();
